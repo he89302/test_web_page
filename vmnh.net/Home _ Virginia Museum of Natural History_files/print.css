@@ -1,0 +1,22 @@
+/****************/
+/* print styles */
+/****************/
+
+
+#header,
+#admin_links,
+#footer,
+#webdevelopment,
+#adminlinks,
+#admin_header,
+#admin_footer, 
+#admin_content_menu,
+#component_hdr,
+#component_ftr {
+	display: none;
+}
+
+#admin_content_main {
+	left: 0;
+	width: 100%;
+}

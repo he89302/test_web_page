@@ -1,0 +1,43 @@
+/* ================================================================ 
+This copyright notice must be kept untouched in the stylesheet at 
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/pro_dropdown_3.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+/* ----- menu ----- */
+.menu {
+	color: #3A2F1E;
+	padding: 30px 0 0 0;
+	position: relative;
+	z-index: 400;
+}
+.menu,
+#menubar .menu {
+	text-align: center;
+}
+#nav { 
+	display:inline-block;
+	position:relative;
+	z-index: 400;
+	background-color:#19a7df;
+	height:46px;
+	list-style:none;
+	text-align:center;
+	width:931px;
+}
+
+ul#nav {
+	margin: 0;
+	padding: 1px 0 0 0;
+	width:100%;
+}
+ul#nav li {
+	margin: 0;
+	padding:0 5px; 
+}
+

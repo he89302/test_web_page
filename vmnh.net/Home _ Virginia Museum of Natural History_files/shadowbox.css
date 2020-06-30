@@ -1,0 +1,145 @@
+#sb-container,#sb-wrapper{
+text-align:left; 
+}
+#sb-container,#sb-overlay{
+left:0;
+margin:0;
+padding:0;
+position:absolute;
+top:0;
+width:100%;
+}
+#sb-container{
+display:none;
+height:100%;
+visibility:hidden;
+z-index:999;
+}
+body > #sb-container{
+position:fixed;
+}
+#sb-overlay{
+height:expression(document.documentElement.clientHeight + 'px');
+}
+#sb-container > #sb-overlay{
+height:100%;
+}
+#sb-wrapper{
+position:relative;
+}
+#sb-wrapper img{
+border:none;
+}
+#sb-body{
+border:1px solid #303030;
+margin:0;
+overflow:hidden;
+padding:0;
+position:relative;
+}
+#sb-body-inner{
+height:100%;
+position:relative;
+}
+#sb-content.html{
+height:100%;
+overflow:auto; 
+}
+#sb-loading{
+height:100%;
+padding-top:10px;
+position:absolute;
+text-align:center;
+top:0;
+width:100%;
+}
+#sb-body,#sb-loading{
+background-color:#060606; 
+}
+#sb-title,#sb-info{
+margin:0; 
+overflow: hidden;
+padding:0;
+position:relative;
+}
+#sb-title-inner,#sb-info-inner{
+/*
+font-family:'Lucida Grande',Tahoma,sans-serif;
+line-height:16px; 
+position:relative;
+*/
+}
+#sb-title,#sb-title-inner{
+height:35px;
+}
+#sb-title-inner{
+color:#fff;
+/* font-size:16px; */
+font-size:11px;
+padding:5px 0;
+}
+#sb-info,#sb-info-inner{
+height:20px;
+}
+#sb-info-inner{
+color:#fff;
+font-size:10px;
+}
+#sb-nav{
+float:right;
+height:16px;
+padding:2px 0;
+width:45%;
+}
+#sb-nav a{
+cursor:pointer;
+display:block;
+float:right;
+height:16px;
+margin-left:3px;
+width:16px;
+}
+#sb-nav-close{
+background-image:url(resources/close.png);
+background-repeat:no-repeat;
+}
+#sb-nav-next{
+background-image:url(resources/next.png);
+background-repeat:no-repeat;
+}
+#sb-nav-previous{
+background-image:url(resources/previous.png);
+background-repeat:no-repeat;
+}
+#sb-nav-play{
+background-image:url(resources/play.png);
+background-repeat:no-repeat;
+}
+#sb-nav-pause{
+background-image:url(resources/pause.png);
+background-repeat:no-repeat;
+}
+#sb-counter{
+float:left;
+padding:2px 0;
+width:45%;
+}
+#sb-counter a{
+cursor:pointer;
+color:#fff;
+padding:0 4px 0 0;
+text-decoration:none;
+}
+#sb-counter a.sb-counter-current{
+text-decoration:underline;
+}
+div.sb-message{
+font-family:'Lucida Grande',Tahoma,sans-serif;
+font-size:12px;
+padding:10px;
+text-align:center;
+}
+div.sb-message a:link,div.sb-message a:visited{
+color:#fff;
+text-decoration:underline;
+}

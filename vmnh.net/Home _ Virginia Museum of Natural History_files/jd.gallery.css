@@ -1,0 +1,383 @@
+#myGallery, #myGallerySet, #flickrGallery
+{
+	border: 1px solid #3C1601;
+	height: 275px;
+	width: 275px;
+	z-index:5;
+}
+
+#flickrGallery
+{
+	height: 275px;
+	width: 275px;
+}
+
+#myGallery img.thumbnail, #myGallerySet img.thumbnail
+{
+	display: none;
+}
+
+.jdGallery
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jdGallery img
+{
+	border: 0;
+	margin: 0;
+}
+
+.jdGallery .slideElement
+{
+	background-color: #765A4F;
+	background-image: url('img/loading-bar-black.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+.jdGallery .loadingElement
+{
+	background-color: #765A4F;
+	background-image: url('img/loading-bar-black.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.jdGallery .slideInfoZone
+{
+	background: #CFBBA2;
+	bottom: 0;
+	color: #765A4F;
+	height: 40px;
+	left: 0;
+	margin: 0px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+* html .jdGallery .slideInfoZone
+{
+	bottom: -1px;
+}
+
+.jdGallery .slideInfoZone h2
+{
+	color: #3C1601;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+	margin: 2px 5px;
+	padding: 0;
+}
+
+.jdGallery .slideInfoZone p
+{
+	/*
+	color: #765A4F;
+	*/
+	color: #3C1601;
+	font-size: 10px;
+	margin: 2px 5px;
+	padding: 0;
+}
+
+.jdGallery div.carouselContainer
+{
+	height: 135px;
+	left: 0;
+	margin: 0px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.jdGallery a.carouselBtn
+{
+	background: #CFBBA2;
+	bottom: 0;
+	/*
+	color: #765A4F;
+	*/
+	color: #3C1601;
+	cursor: pointer;
+	font-size: 13px;
+	height: 20px;
+	padding: 0 10px;
+	position: absolute;
+	right: 30px;
+	text-align: center;
+	/*width: 100px; background: url('img/carousel_btn.gif') no-repeat;*/
+}
+
+.jdGallery .carousel
+{
+	background: #CFBBA2;
+	/*
+	color: #765A4F;
+	*/
+	color: #3C1601;
+	height: 115px;
+	left: 0;
+	margin: 0px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 0;
+	top: 0;
+	width: 100%;
+}
+
+.jdExtCarousel
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jdGallery .carousel .carouselWrapper, .jdExtCarousel .carouselWrapper
+{
+	height: 78px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+}
+
+.jdGallery .carousel .carouselInner, .jdExtCarousel .carouselInner
+{
+	position: relative;
+}
+
+.jdGallery .carousel .carouselInner .thumbnail, .jdExtCarousel .carouselInner .thumbnail
+{
+	background: #3C1601;
+	background-position: center center;
+	border: solid 1px #fff;
+	cursor: pointer;
+	float: left;
+}
+
+.jdGallery .wall .thumbnail, .jdExtCarousel .wall .thumbnail
+{
+	margin-bottom: 10px;
+}
+
+.jdGallery .carousel .label, .jdExtCarousel .label
+{
+	bottom: 5px;
+	font-size: 13px;
+	left: 10px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+.jdGallery .carousel .wallButton, .jdExtCarousel .wallButton
+{
+	background: #222;
+	border: 1px solid #888;
+	bottom: 5px;
+	cursor: pointer;
+	font-size: 10px;
+	margin: 0;
+	padding: 1px 2px;
+	position: absolute;
+	right: 10px;
+}
+
+.jdGallery .carousel .label .number, .jdExtCarousel .label .number
+{
+	color: #3C1601;
+}
+
+.jdGallery a
+{
+	color: inherit;
+	font-size: 100%;
+	text-decoration: none;
+}
+
+.jdGallery a.right, .jdGallery a.left
+{
+	cursor: pointer;
+	filter:alpha(opacity=60);
+	height: 99%;
+	opacity: 0.6;
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	position: absolute;
+	width: 25%;
+	z-index:10;
+}
+
+* html .jdGallery a.right, * html .jdGallery a.left
+{
+	filter:alpha(opacity=50);
+}
+
+.jdGallery a.right:hover, .jdGallery a.left:hover
+{
+	filter:alpha(opacity=80);
+	opacity: 0.8;
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+}
+
+.jdGallery a.left
+{
+	background: url('img/fleche1.png') no-repeat center left;
+	left: 0;
+	top: 0;
+}
+
+* html .jdGallery a.left { 
+	background: url('img/fleche1.gif') no-repeat center left; 
+}
+
+.jdGallery a.right
+{
+	background: url('img/fleche2.png') no-repeat center right;
+	right: 0;
+	top: 0;
+}
+
+* html .jdGallery a.right { 
+	background: url('img/fleche2.gif') no-repeat center right; 
+}
+
+.jdGallery a.open
+{
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.withArrows a.open
+{
+	background: none;
+	cursor: pointer;
+	height: 99%;
+	left: 25%;
+	opacity: 0.8;
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	z-index: 10;
+}
+
+.withArrows a.open:hover { 
+	background: url('img/open.png') no-repeat center center; 
+}
+
+* html .withArrows a.open:hover { 
+	background: url('img/open.gif') no-repeat center center;
+	filter:alpha(opacity=80); 
+}
+	
+	
+/* Gallery Sets */
+
+.jdGallery a.gallerySelectorBtn
+{
+	background: #CFBBA2;
+	color: #765A4F;
+	cursor: pointer;
+	filter:alpha(opacity=60);
+	font-size: 13px;
+	height: 20px;
+	left: 30px;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	padding: 0 10px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	/*width: 100px; background: url('img/carousel_btn.gif') no-repeat;*/
+	z-index: 15;
+}
+
+.jdGallery .gallerySelector
+{
+	background: #3C1601;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+
+.jdGallery .gallerySelector h2
+{
+	color: #765A4F;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 0;
+	padding: 10px 20px 10px 20px;
+}
+
+.jdGallery .gallerySelector .gallerySelectorWrapper
+{
+	overflow: hidden;
+}
+
+.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton
+{
+	border: 1px solid #888;
+	color: #765A4F;
+	cursor: pointer;
+	float: left;
+	height: 40px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.jdGallery .gallerySelector .gallerySelectorInner div.hover
+{
+	background: #CFBBA2;
+}
+
+.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton div.preview
+{
+	background: #3C1601;
+	background-position: center center;
+	border: none;
+	float: left;
+	height: 40px;
+	margin-right: 5px;
+	width: 40px;
+}
+
+.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton h3
+{
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+.jdGallery .gallerySelector .gallerySelectorInner div.galleryButton p.info
+{
+	color: #765A4F;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
